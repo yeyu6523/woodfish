@@ -1,6 +1,7 @@
 function loadAudio() {
     return new Promise((resolve, reject) => {
         knockSound.src = './assets/knock.mp3';
+        fireworksSound.src = './assets/fireworks.mp3';
         
         let loadedCount = 0;
         const totalAudio = 2;
@@ -25,3 +26,4 @@ function loadAudio() {
             reject(e);
         };
     });
+}
